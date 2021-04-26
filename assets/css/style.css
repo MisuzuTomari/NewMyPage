@@ -1,0 +1,372 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: white;
+    height: 20vh;
+    width: 100vw;
+}
+
+.nav, .center{
+    display: flex;
+}
+.nav{
+    display: flex;
+} 
+.center{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Bodoni Moda', serif;
+}
+.nav > li > a {
+    color: #0d3c5F;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 50px;
+} 
+
+.flower{
+
+    width: 100%;
+    height: 0;
+    padding-top: calc(300 / 1000 * 100%); /* calc(画像高さ ÷ 画像横幅 × 100%) */
+    background: url(../img/main.jpeg) center center / cover no-repeat;
+    position: relative;
+    
+}
+
+.me > .toppic{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+
+.about{
+    width: 450px;
+    height: 300px;
+    margin: 100px 10% 150px 50%;
+}
+
+h1{
+    /* font-size: 40px;
+    margin-bottom: 20px; */
+    font-family: 'Sacramento', cursive;
+}
+.letme{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.misuzutomari{
+    font-family: 'Bodoni Moda', serif;
+}
+
+#bio{
+    background-color: bisque;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.Biography{
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.history > h1{
+    font-size: 30px;
+    padding: 30px 0px 10px 0px;
+}
+
+.skills{
+    display: flex;
+    padding-top: px;
+}
+
+.history{
+    width: 50%;
+    font-family: 'Bodoni Moda', serif;
+}
+.history2{
+    width: 50%;
+    padding-top: 80px;
+    font-family: 'Bodoni Moda', serif;
+}
+
+
+
+
+
+.pic{
+    display: flex;
+    justify-content: space-around;
+}
+#pictures{
+    margin-top: 100px;
+}
+.pictures{
+    font-size: 60px;
+    margin: 50px;
+    align-items: center;
+}
+
+
+
+#blog{
+    margin-top: 100px;
+    padding: 50px;
+    background-color:rgb(250,246,235);
+}
+
+#blog > h1{
+    font-size: 60px;
+
+}
+.blogurl{
+    display: flex;
+}
+.urls{
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 25px;
+    font-family:  'Bodoni Moda', serif;
+}
+.urls > p{
+    text-decoration: none;
+}
+.blog{
+    display: flex;
+    flex-wrap: row;
+}
+.blogpic{
+    background-image: url(../img/How\ to\ clear\ hormonal\ acne.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 50vw;
+}
+
+
+
+
+
+#contact {
+    margin-bottom: 230px;
+
+}
+#contact > h1 {
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.contact-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+input, textarea {
+    width: 40%;
+    font-size: 23px;
+    margin-bottom: 18px;
+    padding: 3px 12px;
+}
+input, textarea, button {
+    border-radius: 5px;
+}
+textarea {
+    width: 40%;
+}
+button {
+    width: 140px;
+    font-size: 23px;
+    padding: 7px;
+    height: 60px;
+    background-color: rosybrown;
+    margin-top: 26px;
+    cursor: pointer;
+    color: white;
+}
+
+
+footer{
+    margin: 50px;
+}
+.footer{
+    text-align: center;
+    justify-items: center;
+    font-family:  'Bodoni Moda', serif;
+    margin: 20px;
+}
+
+
+@media screen and (max-width:812px){
+  
+    
+
+/* ここから */
+
+    .menu-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background-color: #3584bb;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+
+
+    
+
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+
+
+
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 80;
+        background-color: #3584bb;
+    }
+    .menu-content ul {
+        padding: 70px 10px 0;
+    }
+    .menu-content ul li {
+        border-bottom: solid 1px #ffffff;
+        list-style: none;
+    }
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        box-sizing: border-box;
+        color:#ffffff;
+        text-decoration: none;
+        padding: 9px 15px 10px 0;
+        position: relative;
+    }
+    .menu-content ul li a::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: solid 2px #ffffff;
+        border-right: solid 2px #ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 11px;
+        top: 16px;
+    }
+
+
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;/*leftの値を変更してメニューを画面外へ*/
+        z-index: 80;
+        background-color: #3584bb;
+        transition: all 0.5s;/*アニメーション設定*/
+    }
+
+
+
+    #menu-btn-check:checked ~ .menu-content {
+        left: 0;/*メニューを画面内へ*/
+    }
+    
+    
+
+/* ここまで */
+
+
+.toppic{
+    width: 250px;
+    height: 400px;
+
+}
+
+
+.header-left{
+    display: none;
+}
+
+.header-right{
+    display: none;
+
+}
+
+.flower{
+    width: 812px;
+    height: 375px;
+}
+
+.center{
+    font-size: 40px;
+
+}
+
+.letme{
+    margin: 30px 0px 10px 150px;
+
+}
+.misuzutomari{
+    margin: 30px 10px 300px 200px;
+
+}
+
+#bio{
+    width: 812px;
+    margin: 0px;
+ 
+}
+#blog{
+    width: 812px;
+
+}
+
+
+}
+
+
